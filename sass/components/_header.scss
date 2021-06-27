@@ -1,18 +1,5 @@
-.header {
-  padding-top: 32px;
-  padding-bottom: 32px;
-  border-bottom: 1px solid #ececec;
-}
-
-.header__container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
 .header__logo {
   display: inline-block;
-  margin-right: 93px;
   text-decoration: none;
   font-family: var(--logo-font);
   font-weight: bold;
@@ -21,31 +8,13 @@
   color: var(--accent-cl);
 }
 
-.nav__list {
-  display: inline-flex;
-  list-style: none;
-}
-
-.contacts__list {
-  display: inline-flex;
-  list-style: none;
-}
-
-.nav__item:not(:last-child) {
-  margin-right: 50px;
-}
-
-.contacts__item {
-  margin-right: 50px;
-}
-
 .header__logo2 {
-  font-family: var(--logo-font);
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.19;
   letter-spacing: 0.03em;
   color: #000000;
+}
+
+.nav {
+  display: none;
 }
 
 .nav__link {
@@ -65,8 +34,8 @@
   color: var(--accent-cl);
 }
 
-.nav__link--current {
-  color: var(--accent-cl);
+.contacts__list {
+  display: none;
 }
 .contacts__link {
   display: flex;
@@ -76,22 +45,17 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .contacts__link:hover,
 .contacts__link:focus {
   color: var(--accent-cl);
 }
-
 .contacts__icon {
   fill: currentColor;
   margin-right: 10px;
 }
-
-/*подчеркивание меню навигации*/
 .nav__link {
   position: relative;
 }
-
 .nav__link::after,
 .nav__link--current::after {
   content: "";
@@ -103,11 +67,135 @@
   background-color: var(--accent-cl);
   border-radius: 2px;
 }
-
 .nav__link::after {
   opacity: 0;
 }
-
 .nav__link--current::after {
   opacity: 1;
 }
+
+// .nav__link--current {
+//   color: var(--accent-cl);
+// }
+// .contacts__link {
+//   display: flex;
+//   align-items: center;
+//   color: inherit;
+//   text-decoration: none;
+//   transition-duration: 250ms;
+//   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+// }
+
+// .header {
+//   padding-top: 32px;
+//   padding-bottom: 32px;
+//   border-bottom: 1px solid #ececec;
+// }
+
+// .header__container {
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+// }
+
+// .header__logo {
+//   display: inline-block;
+//   margin-right: 93px;
+//   text-decoration: none;
+//   font-family: var(--logo-font);
+//   font-weight: bold;
+//   font-size: 26px;
+//   line-height: 1.19;
+//   color: var(--accent-cl);
+// }
+
+// .nav__list {
+//   display: inline-flex;
+//   list-style: none;
+// }
+
+// .contacts__list {
+//   display: inline-flex;
+//   list-style: none;
+// }
+
+// .nav__item:not(:last-child) {
+//   margin-right: 50px;
+// }
+
+// .contacts__item {
+//   margin-right: 50px;
+// }
+
+// .header__logo2 {
+//   font-family: var(--logo-font);
+//   font-weight: bold;
+//   font-size: 26px;
+//   line-height: 1.19;
+//   letter-spacing: 0.03em;
+//   color: #000000;
+// }
+
+// .nav__link {
+//   color: inherit;
+//   text-decoration: none;
+//   font-family: var(--main-font);
+//   font-weight: 500;
+//   line-height: 1.14px;
+//   letter-spacing: 0.02em;
+//   color: var(--main-text-cl);
+//   transition-duration: 250ms;
+//   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+// }
+
+// .nav__link:hover,
+// .nav__link:focus {
+//   color: var(--accent-cl);
+// }
+
+// .nav__link--current {
+//   color: var(--accent-cl);
+// }
+// .contacts__link {
+//   display: flex;
+//   align-items: center;
+//   color: inherit;
+//   text-decoration: none;
+//   transition-duration: 250ms;
+//   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+// }
+
+// .contacts__link:hover,
+// .contacts__link:focus {
+//   color: var(--accent-cl);
+// }
+
+// .contacts__icon {
+//   fill: currentColor;
+//   margin-right: 10px;
+// }
+
+// /*подчеркивание меню навигации*/
+// .nav__link {
+//   position: relative;
+// }
+
+// .nav__link::after,
+// .nav__link--current::after {
+//   content: "";
+//   display: block;
+//   position: absolute;
+//   margin-top: 29px;
+//   width: 100%;
+//   height: 4px;
+//   background-color: var(--accent-cl);
+//   border-radius: 2px;
+// }
+
+// .nav__link::after {
+//   opacity: 0;
+// }
+
+// .nav__link--current::after {
+//   opacity: 1;
+// }
